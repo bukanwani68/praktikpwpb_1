@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <table>
+        <!--herder-->
+        <tr style="background-color: rgb(180, 175, 175);">
+            <td height="50px" width="1200px" align="center" colspan="3">Pendaftaran Siswa Baru</td>
+        </tr>
+        <tr>
+            <!--sidebar kiri-->
+            <td width="300px" style="background-color: rgb(126, 119, 119);">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="form.html">Formulir pendaftaran</a></li>
+                    <li><a href="tampil.html">Tampil data siswa</a></li>
+                </ul>
+            </td>
+            <td width="900px" align="center">
+                    <table>
+                    <tr>
+                       <td width="800px" height="100px">
+                        <form action="contact.php" method="POST">
+                            <fieldset>
+                            <legend>Harap Isi Formulir</legend>
+                            <p>
+                                <label>NIS :</label>
+                                <input type="number" name="nis" placeholder="Masukan NIS" />
+                            </p>
+                            <p>
+                                <label>Name :</label>
+                                <input type="text" name="nama" placeholder="Masukan Nama Lengkap" />
+                            </p>
+                            <p>
+                                <label>Tempat Lahir :</label>
+                                <select name="t-lahir" id="">
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bogor</option>
+                                    <option value="">Depok</option>
+                                    <option value="">Tanggerang</option>
+                                    <option value="">Bekasi</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>Tanggal Lahir :</label>
+                                <input type="date" name="tgllahir"/>
+                            </p>
+                            <p>
+                                <label>Kelas :</label>
+                                <select name="kelas" id="">
+                                    <option value="">12 RPL 1</option>
+                                    <option value="">12 RPL 2</option>
+                                </select>
+                            </p>
+                            <P>
+                                <label>Jenis Kelamin :</label>
+                                <br>
+                                <input type="radio" name="jeniskelamin" value="Laki-laki">
+                                <label for="jeniskelamin">Laki-laki</label>
+
+                                <input type="radio" name="jeniskelamin" value="Perempuan">
+                                <label for="jeniskelamin">Perempuan</label>
+                            </P>
+                            <p>
+                                <label>Hobi :</label>
+                                <input type="checkbox" name="hobi" id="" value="Olahraga">
+                                <label for="olahraga">Olahraga</label>
+                                <input type="checkbox" name="hobi" id="" value="Music">
+                                <label for="music">Music</label>
+                                <input type="checkbox" name="hobi" id="" value="Film">
+                                <label for="hobi">Film</label>
+                            </p>
+                            <p>
+                                <label for="alamat">Alamat :</label>
+                                <br>
+                                <textarea name="alamat" id="" cols="30" rows="5"></textarea>
+                            </p>
+                            <p>
+                                <input type="reset" name="reset" value="Reset">
+                                <input type="submit" name="submit" value="Kirim" />
+                            </p>
+                            </fieldset>
+                        </form>
+                       </td>
+                    </tr>
+                        <!--footer-->
+                        <td align="center" width="1200px" colspan="3" style="background-color: rgb(180, 175, 175);">&copy;CopyrightArwani</td>
+                    </tr>
+                </table>
+                </table>
+</body>
+</html>
